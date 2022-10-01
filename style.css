@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    transition: 200ms ease all;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+header {
+    background: #381a18;
+    background-size: cover;
+}
+
+header img {
+    width: 130%;
+}
+
+.header-wrap {
+    width: 66%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(63, 196, 149);
+    text-shadow: 0 0 9px black;
+    font-size: 22px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+}
+
+header nav a:hover {
+    color: rgb(112, 236, 195);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.head-btn {
+    display: block;
+    margin: 0 auto;
+    background: rgb(63, 196, 149);
+    padding: 9px 22px;
+    color: rgb(63, 196, 149);
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.video-container {
+    display: none;
+}
+
+.header-inner {
+    padding: 2px 0;
+}
+
+
+/* About */
+
+.game-about {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.75)),
+        url("../image/game-bg.jpg");
+    background-size: cover;
+}
+
+.container-game-inner {
+    padding: 85px 0;
+}
+
+.container-game {
+    width: 22%;
+    margin: 0 auto;
+}
+
+.game-img {
+    position: relative;
+    left: 72px;
+    cursor: pointer;
+}
+
+.gamelogo-img {
+    position: relative;
+    bottom: 45px;
+}
+
+.purchase-play {
+    color: white;
+    text-align: center;
+}
+
+.purchase-btn a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.purchase-btn {
+    background-color: white;
+    padding: 9px 5px;
+    margin: 0 80px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bkg-color-wrapper {
+    padding: 10px;
+    background-color: rgba(2, 0, 0, 0.7);
+    margin: 30px 63px;
+}
+
+/* Home */
+
+#home {
+    background: url(https://www.klei.com/sites/all/themes/klei_theme/images/optimized/texture/grey_grain.jpg);
+}
+
+.home-container {
+    width: 53%;
+    margin: 0 auto;
+}
+
+.home-flex {
+    display: flex;
+    align-items: center;
+}
+
+.before {
+    width: 100%;
+    position: absolute;
+    top: 90%;
+}
+
+
+.home-text {
+    color: rgb(35, 51, 53);
+    line-height: 1.4;
+}
+
+.home-inner {
+    padding: 45px 0;
+}
+
+.paper-top {
+    width: 100%;
+    position: absolute;
+}
+
+/* Gallery */
+
+#gallery {
+    background-color: black;
+}
+
+.gal-wrap {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gal-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.gal-inner {
+    padding: 65px 0;
+}
+
+.img_gal:hover {
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+
+.image-1 {
+    width: 25%;
+    margin-left: 15px;
+}
+
+.image-2 {
+    width: 25%;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.hr-img {
+    position: relative;
+    bottom: 20px;
+    width: 11%;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.img-btn {
+    padding: 15px 40px;
+    background-color: black;
+    border-radius: 3px;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+#purchase {
+    background: url(../image/dont-starve-togethersocialbgimage.jpg);
+}
+
+.purch-wrap {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.purch-inner {
+    padding: 45px 0;
+}
+
+.purch-text {
+    color: white;
+    font-size: 22px;
+}
+
+.purch-available-on {
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
+
+.fields-buy a {
+    text-decoration: none;
+}
+
+.fields-buy {
+    display: inline-block;
+    margin: 5px 2px;
+}
+
+.steam-pl {
+    padding: 8px 20px 6px;
+    border-radius: 3px;
+    font-size: 15px;
+    line-height: 1em;
+    background: #353535;
+    color: #fff;
+}
+
+
+.ps-pl {
+    background: #006dcc;
+    padding: 8px 20px 6px;
+    border-radius: 3px;
+    font-size: 15px;
+    line-height: 1em;
+    color: #fff;
+}
+
+.xbox-pl {
+    background: #177c00;
+    padding: 8px 20px 6px;
+    border-radius: 3px;
+    font-size: 15px;
+    line-height: 1em;
+    color: #fff;
+}
+
+.paper-img {
+    content: " ";
+    position: absolute;
+    top: -6px;
+    width: 100%;
+    height: 8px;
+    background: url(/sites/all/themes/klei_theme/images/optimized/texture/paper_tear_top_full_orange_minimal_1.png) repeat-x 100% 50%;
+}
+
+/* Footer */
+
+#footer {
+    background: #181716;
+}
+
+.footer-wrap {
+    width: 75%;
+}
+
+.footer-inner {
+    padding: 19px 0;
+}
+
+.footer-img {
+    position: relative;
+    left: 32%;
+    border-radius: 6px;
+    width: 4%;
+    bottom: 102px;
+}
+
+.li-a {
+    color: #eee;
+}
+
+.text-footer {
+    text-align: right;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.Rutikzz {
+    color: white
+}
+
+.li-field {
+    color: #eee;
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    float: none;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+}
+
+.ul-footer {
+    text-align: right;
+}
+
+.modal-canvas {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
+}
+
+.modal {
+    padding: 25px;
+    box-shadow: 0 0 20px 0 #999;
+}
+
+
+
+.modal-close {
+    cursor: pointer;
+    text-align: right;
+    color: white;
+    border: 3px solid white;
+    text-align: center;
+    width: 3%;
+    height: 26px;
+    margin-left: 50%;
+    border-radius: 6px;
+    background-color: black;
+}
+
+.modal-video-container {
+    margin-top: 20px;
+}
+
+.footer-ibf {
+    position: relative;
+    width: 100%;
+    bottom: 5%;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        font-size: 30px;
+    }
+
+    .footer-img {
+        display: none;
+    }
+
+    .container-game {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .gamelogo-img {
+        width: 60%;
+    }
+
+    .game-flex {
+        text-align: center;
+    }
+
+    .game-img {
+        left: 0;
+    }
+
+    .home-flex {
+        display: block;
+    }
+
+    .home-container {
+        text-align: center;
+    }
+
+    .main-png {
+        display: none;
+    }
+
+    .image-1 {
+        width: 95%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    .modal-close {
+        color: white;
+        border: 3px solid white;
+        text-align: center;
+        width: 29%;
+        height: 24px;
+        margin-left: 34%;
+        border-radius: 6px;
+        background-color: black;
+    }
+
+    .image-2 {
+        width: 95%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .before {
+        width: 100%;
+        position: absolute;
+        top: 84%;
+    }
+
+    .game-about {
+        background: url("../image/dont-starve-togethermobilebg.jpg");
+        background-size: cover;
+    }
+
+    .purch-wrap {
+        width: 100%;
+    }
+
+    .hr-img {
+        bottom: 11px;
+    }
+
+    .footer-text {
+        display: flex;
+        text-align: center;
+    }
+
+    .footer-wrap {
+        width: 96%;
+    }
+
+    #purchase h2 {
+        font-size: 30px;
+    }
+
+    .ul-footer {
+        text-align: center;
+        line-height: 24px;
+    }
+}

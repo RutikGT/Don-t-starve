@@ -333,7 +333,8 @@ header nav a:hover {
 }
 
 .Rutikzz {
-    color: white
+    color: white;
+    text-decoration: none;
 }
 
 .li-field {

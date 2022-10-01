@@ -218,6 +218,13 @@ header nav a:hover {
     border-radius: 10px;
 }
 
+.hr-imgg {
+    position: relative;
+    bottom: 20px;
+    width: 11%;
+    border-radius: 10px;
+}
+
 .hidden {
     display: none;
 }
@@ -233,6 +240,7 @@ header nav a:hover {
 
 #purchase {
     background: url(../image/dont-starve-togethersocialbgimage.jpg);
+    background-position: center;
 }
 
 .purch-wrap {
@@ -455,6 +463,10 @@ header nav a:hover {
         margin-top: 20px;
     }
 
+    .hr-imgg {
+        bottom: 7px;
+    }
+
     header img {
         width: 100%;
     }
@@ -520,5 +532,9 @@ header nav a:hover {
         text-align: center;
         line-height: 24px;
         width: 84%;
+    }
+
+    .bkg-color-wrapper {
+        margin: 30px 46px;
     }
 }

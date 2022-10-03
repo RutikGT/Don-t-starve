@@ -15,5 +15,8 @@ $(document).ready(function () {
     $(".modal-close").click(function () {
         $(".modal-canvas").toggleClass("hidden");
     });
+    $('.burger').click(function (event) {
+        $('.burger,.burger-menu,.logo-header').toggleClass('active');
+    });
 });
 

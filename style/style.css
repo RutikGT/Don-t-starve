@@ -300,15 +300,6 @@ header nav a:hover {
     color: #fff;
 }
 
-.paper-img {
-    content: " ";
-    position: absolute;
-    top: -6px;
-    width: 100%;
-    height: 8px;
-    background: url(/sites/all/themes/klei_theme/images/optimized/texture/paper_tear_top_full_orange_minimal_1.png) repeat-x 100% 50%;
-}
-
 /* Footer */
 
 #footer {
@@ -401,14 +392,17 @@ header nav a:hover {
     display: none;
 }
 
+.burger-menu {
+    display: none;
+}
+
 @media (max-width: 720px) {
     .nav {
         display: none;
     }
 
-    .burger {
+    .active {
         display: block;
-        font-size: 30px;
     }
 
     .footer-img {
@@ -469,6 +463,16 @@ header nav a:hover {
 
     header img {
         width: 100%;
+        position: relative;
+        right: 21px;
+        z-index: 4;
+        transition: 0ms;
+    }
+
+    header img.active {
+        position: fixed;
+        width: auto;
+        right: 62%;
     }
 
     .modal-close {
@@ -532,6 +536,51 @@ header nav a:hover {
         text-align: center;
         line-height: 24px;
         width: 84%;
+    }
+
+    .burger-menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        transition: 0ms;
+        width: 100%;
+        height: 50%;
+        z-index: 3;
+        background-color: #381a18;
+    }
+
+    .burger-menu.active {
+        top: 0;
+    }
+
+    .burger {
+        display: block;
+        font-size: 27px;
+        color: white;
+        position: relative;
+        transition: 0ms;
+        z-index: 4;
+        left: 5px;
+    }
+
+    .burger.active {
+        position: fixed;
+        left: 80%;
+        top: 28px;
+    }
+
+    .nav-mobile {
+        position: relative;
+        top: 75px;
+        right: 10px;
+    }
+
+    .nav__item-mobile {
+        margin-top: 20px;
+    }
+
+    .head-btn {
+        display: inline;
     }
 
     .bkg-color-wrapper {

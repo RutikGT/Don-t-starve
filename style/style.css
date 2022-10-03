@@ -472,7 +472,7 @@ header nav a:hover {
     header img.active {
         position: fixed;
         width: auto;
-        right: 62%;
+        right: inherit;
     }
 
     .modal-close {
